@@ -2,10 +2,11 @@
 .btn-fixed(){
         background:@btn-bg-color;
         border-radius:4px;
-        padding:15px;
+        padding:5px;
         margin:5px;
-        width:250px;
+        width:100px;
         color:@porcelain;
+        font-size:2rem;
       }
      
       .btn-layout(@justify, @align){
@@ -16,8 +17,11 @@
 
     
     
-    .bordered-box (@width){
-        border: @width solid red;
-        padding: @width * 3;
-          &:hover{
-            border-color:orange;
+    .colors(@background, @color){
+background:@btn-bg-color;
+color:@porcelain;
+&:hover{
+  background:@background;
+  color:@color;
+}
+    }

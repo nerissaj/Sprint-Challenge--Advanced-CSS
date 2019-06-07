@@ -5,10 +5,7 @@
     background: @nav-bg;
     border: 1px solid @nav-border;
     margin:10px;
-    @media @phone{
-        justify-content: center;
-        align-items: center;
-    }
+}
     
   
     .nav-container {
@@ -21,7 +18,8 @@
         flex-wrap: wrap;
         justify-content: center;
         padding-top: 10px;
-        font-size: 3rem;
+        font-size: 1rem;
+        
       }
   
     
@@ -38,15 +36,12 @@
         margin-bottom:35px;
        
   
-        @media @phone {
-          width: 100%;
-          justify-content: space-around;
-        }
+        
         
         
        
       }
-    }
+    
     nav h1 {
         
         display: flex;
@@ -55,7 +50,10 @@
         font-size: 4rem;
         
     }
-    h1{
-        .bordered(5px);
+    nav{
+    @media @phone {
+      width: 100%;
+      justify-content: space-around;
     }
+  }      
    // .main-navigation
