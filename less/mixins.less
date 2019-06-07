@@ -1,1 +1,23 @@
 // Mixins Here
+.btn-fixed(){
+        background:@btn-bg-color;
+        border-radius:4px;
+        padding:15px;
+        margin:5px;
+        width:250px;
+        color:@porcelain;
+      }
+     
+      .btn-layout(@justify, @align){
+        display: flex;
+        justify-content: @justify;
+        align-items: @align;
+    }
+
+    
+    
+    .bordered-box (@width){
+        border: @width solid red;
+        padding: @width * 3;
+          &:hover{
+            border-color:orange;
