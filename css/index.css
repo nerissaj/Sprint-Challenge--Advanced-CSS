@@ -160,7 +160,7 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width:500px) {
+@media(max-width:500px) {
   width: 90%;
   margin: 0 5%;
 }
@@ -228,6 +228,11 @@ footer {
 .home .intro img {
   border-radius: 4px;
 }
+@media (max-width:500px) {
+  .home .intro img {
+    width: 100%;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -246,37 +251,48 @@ footer {
   }
 }
 @media (max-width:500px) {
-  .home .space-images .sky,
-  .home .space-images .launch {
+  .home .sky,
+  .home .launch {
     display: none;
   }
 }
-.home .visit-planets {
+.visit-planets {
   padding: 15px;
 }
-.home .visit-planets h3 {
+.visit-planets h3 {
   margin-top: 11px;
 }
-.home .visit-planets p {
+.visit-planets p {
   margin-top: 13px;
 }
-.home .walk {
+.walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
 }
-.home .walk .walk-text {
-  width: 50%;
+.walk .walk-text {
+  width: 100%;
+  
 }
-.home .walk .walk-text h3 {
+@media (max-width:500px) {
+  .walk .walk-text {
+    margin: 6px;
+    float:right;
+    
+  }
+}
+.walk .walk-text h3 {
   margin-bottom: 10px;
+  float: left;
+  
 }
-.home .walk .walk-text p {
+.walk .walk-text p {
   margin-bottom: 26px;
+  float:left;
 }
-.home .walk .walk-text div.btn {
+.walk .walk-text div.btn {
   border-radius: 4px;
   padding: 5px;
   margin: 5px;
@@ -287,31 +303,30 @@ footer {
   align-items: center;
   background: #22283A;
   color: #F6F7F8;
+  float:left;
 }
-.home .walk .walk-text div.btn:hover {
+.walk .walk-text div.btn:hover {
   background: yellow;
   color: blue;
 }
 @media (max-width:500px) {
-  .home .walk .walk-text div.btn {
+  .walk .walk-text div.btn {
     font-size: 3rem;
-    width: 100%;
+    width: 432px;
     padding: 36px;
+    margin: auto;
+    
   }
 }
-.home .walk .walk-text .walk-img {
-  width: 46%;
+.walk .walk-text .walk-img {
+  width: 250px;
   margin-left: 4%;
+  float:right;
 }
-.home .walk .walk-text img {
+.walk .walk-text .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-@media (max-width:500px) {
-  .home .walk .walk-text img {
-    order: 1;
-    margin-top: 0;
-    align-content: flex-start;
-  }
+  display: block;
+  
 }

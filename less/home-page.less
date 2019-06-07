@@ -62,7 +62,7 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+float:left;
     
 
     .walk-text {
@@ -70,7 +70,7 @@
       @media @phone{
         margin:60px;
         display:flex;
-        order:1;
+        float:left;
       }
     
 
@@ -86,7 +86,7 @@
       div.btn{
         .btn-fixed();
         .btn-layout(center, center);
-        .colors (yellow, blue);
+        .colors(yellow, blue);
       @media @phone{
     font-size: 3rem;
     width: 432px;
@@ -101,12 +101,16 @@
       margin-left: 4%;
       
       
+    
       }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        justify-content: flex-end;
+        display:flex;
+        
         
       }
     }
