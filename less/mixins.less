@@ -1,1 +1,27 @@
 // Mixins Here
+.btn-fixed(){
+        background:@btn-bg-color;
+        border-radius:4px;
+        padding:5px;
+        margin:5px;
+        width:100px;
+        color:@porcelain;
+        font-size:2rem;
+      }
+     
+      .btn-layout(@justify, @align){
+        display: flex;
+        justify-content: @justify;
+        align-items: @align;
+    }
+
+    
+    
+    .colors(@background, @color){
+background:@btn-bg-color;
+color:@porcelain;
+&:hover{
+  background:@background;
+  color:@color;
+}
+    }

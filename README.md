@@ -34,13 +34,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive websites accomodate different devices at specific breakouts and use media queries its quick deployment  and a fully responsive site combines the features of fix, adaptive and fluid and it takes longer to build it accomodates thousand of devices.
+
+
 2. Describe what it means to be mobile first vs desktop first.
 
+mobile first uses min-width and the layout expands as you gain more more screen space.
+
+
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+the font size makes it more accessible since it will be easier to convert to rem units since 62.5% equals to 10px so if you wanted to use 20px for a div you can convert it to 2rem. Using 62.5% in the 'html 'as the base value because then you can convert rem units by the power of 10 instead of 16. 62.5 * .16 = 10. That means 1rem would equate to 10px throughout the document!
+
+
 
 4. How would you describe preprocessing to someone new to CSS?
 
+syntax (grammar)for the CSS it enhances the performance of the regular stylesheet by making it more usuable and manageable.
+
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept is  variables but the concept that gives me the most trouble are mixins.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -50,10 +66,10 @@ Follow these steps to set up your project:
 
 ### Git Set up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [ x] Create a forked copy of this project.
+- [x ] Add your project manager as collaborator on Github.
+- [x ] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
  
@@ -67,8 +83,8 @@ Follow these steps for completing your project.
 ### Preprocessor Set up
 
 * [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
-* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [ x] Open your terminal and navigate to your preprocessing project by using the `cd` command
+* [x ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
 * [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
 * [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
